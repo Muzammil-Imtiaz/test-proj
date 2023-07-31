@@ -45,7 +45,7 @@ const AddItemForm: React.FC = () => {
       })),
     };
     try {
-      const response = await fetch("http://localhost:5000/treeData", {
+      const response = await fetch("http://39.32.193.213:5000/treeData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

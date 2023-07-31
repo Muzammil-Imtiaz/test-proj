@@ -24,7 +24,7 @@ const FormPage = () => {
   };
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/treeData");
+      const response = await fetch("http://39.32.193.213:5000/treeData");
       const data = await response.json();
       setTreeData(data);
     } catch (error) {
@@ -33,7 +33,7 @@ const FormPage = () => {
   };
   const handlePostData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/postData", {
+      const response = await fetch("http://39.32.193.213:5000/postData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
